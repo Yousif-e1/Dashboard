@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="Admin_Dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo"><img src="ChatGPT Image Apr 16, 2025, 05_53_52 PM.png" alt="Logo" /></div>
+      <nav class="nav-as">
+        <a href="Admin_Dashboard.html" class="nav-btn active"><i class="fas fa-th-large"></i> Dashboard</a>
+        <a href="Admin_Mange-Orders.html" class="nav-btn"><i class="fas fa-box"></i> Order</a>
+        <a href="Admin_Mange-Products.html" class="nav-btn"><i class="fas fa-cube"></i> Product</a>
+        <a href="Reports.html" class="nav-btn"><i class="fas fa-chart-bar"></i> Reports</a>
+        <a href="Users.html" class="nav-btn"><i class="fas fa-users"></i> Users</a>
+        <a href="Promocode.html" class="nav-btn"><i class="fas fa-ticket-alt"></i> Promocode</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="stats">
+        <div class="card">
+          <span class="value">30,000</span>
+          <p>Product Sales</p>
+        </div>
+        <div class="card">
+          <span class="value">250</span>
+          <p>New Sellers</p>
+        </div>
+        <div class="card">
+          <span class="value">$400,000</span>
+          <p>Total Revenue</p>
+        </div>
+      </div>
+
+      <!-- Analytics -->
+      <div class="analytics">
+        <h2 class="h">Analytics</h2>
+        <input type="date" value="2021-12-19" />
+        <div class="chart-container">
+          <div class="chart-header">
+          </div>
+
+          <div class="bars">
+            <div class="bar" style="height: 90%;"></div>
+            <div class="bar" style="height: 60%;"></div>
+            <div class="bar" style="height: 40%;"></div>
+            <div class="bar" style="height: 30%;"></div>
+            <div class="bar" style="height: 70%;"></div>
+            <div class="bar" style="height: 50%;"></div>
+            <div class="bar" style="height: 40%;"></div>
+            <div class="bar" style="height: 90%;"></div>
+            <div class="bar" style="height: 70%;"></div>
+            <div class="bar" style="height: 50%;"></div>
+            <div class="bar" style="height: 80%;"></div>
+            <div class="bar" style="height: 60%;"></div>
+          </div>
+
+          <div class="labels">
+            <div class="label">Jan</div>
+            <div class="label">Feb</div>
+            <div class="label">Mar</div>
+            <div class="label">Apr</div>
+            <div class="label">Mai</div>
+            <div class="label">Jun</div>
+            <div class="label">Jul</div>
+            <div class="label">Aug</div>
+            <div class="label">Sep</div>
+            <div class="label">Okt</div>
+            <div class="label">Nov</div>
+            <div class="label">Des</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Best Users -->
+      <div class="best-users">
+        <h4>Best Users</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Name</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ali Maaloul</td>
+              <td>Customer</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ahmed Ali</td>
+              <td>Seller</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mohab Raed</td>
+              <td>Seller</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

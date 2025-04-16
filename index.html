@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link rel="StyleSheet" href="a_login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <img src="WhatsApp Image 2025-04-12 at 18.03.59_192c4166.jpg" alt="Logo">
+        <h1>WELCOME BACK</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <form id="loginForm">
+            <label for="username">User Name</label>
+            <input type="text" id="username" placeholder="Enter your user name" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="**********" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>  
+
+            <button type="submit">Sign in</button>
+        </form>
+
+        <p id="error-message" style="color: red; display: none;">Incorrect username or password!</p>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Hardcoded username and password
+            const correctUsername = "yousif@gmail.com";
+            const correctPassword = "yousif";
+
+            // Check if the entered credentials match the correct ones
+            if (username === correctUsername && password === correctPassword) {
+                // Redirect to the admin dashboard
+                window.location.href = "Admin_Dashboard.html";
+            } else {
+                // Show error message
+                document.getElementById("error-message").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
